@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第10章｜让试点回答下一笔投入</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#chapter-10">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">第4部分 · 发现并放大差异：FDE的现场工作</p><article><h1>第10章｜让试点回答下一笔投入</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#chapter-10--s1">缩小覆盖面，保留一段完整工作</a></li><li><a href="#chapter-10--s2">先明确什么叫改善</a></li><li><a href="#chapter-10--s3">比较要尽量解释变化从哪里来</a></li><li><a href="#chapter-10--s4">两种结果会导向不同决定</a></li><li><a href="#chapter-10--s5">扩大之前，把新问题说出来</a></li></ol></details>
+<p>一套原型在演示时运行顺利，业务负责人仍可能不知道要不要扩大投入。演示证明了某种处理可以发生，却未必说明真实人员愿意用、实际材料处理得好，或者客户结果值得继续投入。</p>
+<p>试点应当服务一项具体决定：扩大、调整、继续观察，还是停止。范围和比较方法都应围绕这项决定安排。</p>
+<h2 id="chapter-10--s1">缩小覆盖面，保留一段完整工作</h2>
+<p>假设设备服务公司想检验：AI帮助整理现场条件和候选方案，能否让普通客户更快取得经过核实的建议。</p>
+<p>如果试点只比较文字生成速度，遗漏了最关键的一段：技术复核、供应确认与最终答复。更合适的小范围，可以选一类资料相对齐备的更新需求，由固定的销售和技术人员接续，直到客户实际取得答复。</p>
+<p>这样缩小的是客户与任务范围，仍保留目标需要的完整关系。复杂改装或现场条件不明的任务可以先另行处理，但必须说明它们被排除；试点成功后，也不能直接宣布那些任务同样适用。</p>
+<p>范围不由固定天数或样本数决定。需要覆盖决定性的任务差异，并取得足以改变下一步选择的证据。有些结果较快可见，有些需要等待后续使用。</p>
+<h2 id="chapter-10--s2">先明确什么叫改善</h2>
+<p>同一项尝试可以有几层观察：资料缺项是否更早发现，技术人员追问是否减少，合格答复是否更快，客户是否能够据此作决定。还要记录新增劳动和错误，而不只统计最顺利的任务。</p>
+<p>比如，销售少花了时间，技术人员却多核对了几轮，局部改善就没有按原路径传下去。又比如，答复更快，但客户真正等待的是安装窗口，试点可能需要调整目标。</p>
+<p>这些观察分别支持不同决定。若准备扩大覆盖，至少应知道新范围会增加哪种难度，谁能接住，以及哪些错误仍需处理。</p>
+<h2 id="chapter-10--s3">比较要尽量解释变化从哪里来</h2>
+<p>最简单的前后比较容易混入其他因素：客户类型变了，人员熟练了，供应条件改善了，甚至只是这段时间需求更少。看到结果变化之后，需要检查这些可能性。</p>
+<p>在可行时，可以让相近任务使用原做法与新做法，并保持相同质量标准。也可以分阶段引入，把人员、任务条件、版本和重要变化记录清楚。方法的复杂程度要匹配决定的重要性，不能因为有一张前后对照表，就认为已经排除所有解释。</p>
+<p>同时保留普通软件或改进分工的替代。如果主要收益来自把缺项做成表单，原型中的AI可能只贡献了一部分。若表单已经解决缺项，下一笔钱可能该投向复核与交接；若资料完备后仍难以整理多种表达，才需要继续比较模型。</p>
+<p>以报价试点为例，先保留几类会影响决定的材料，而不只挑最顺利的订单：</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>任务条件</th>
+<th>新做法应完成什么</th>
+<th>怎样的表现会改变试点安排</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标准型号，资料完整</td>
+<td>准备有据可查的候选，交技术核实</td>
+<td>全部内容仍要重做，就先查准备是否有用</td>
+</tr>
+<tr>
+<td>新照片与旧型号记录冲突</td>
+<td>指出冲突，请技术确认，保持待定</td>
+<td>直接沿用旧配置，就不能扩大这一范围</td>
+</tr>
+<tr>
+<td>库存查询无返回</td>
+<td>保留未确认，不承诺已预留</td>
+<td>把无返回补成成功，就先修动作确认</td>
+</tr>
+<tr>
+<td>答复更快，安装窗口没变</td>
+<td>记录客户实际等待所在环节</td>
+<td>客户仍等安装，就应重估原目标</td>
+</tr>
+</tbody></table></div>
+<h2 id="chapter-10--s4">两种结果会导向不同决定</h2>
+<p>考虑两种教学上的试点结果。第一种：资料齐全的任务确实更快完成，技术追问减少；错误主要集中在试点原本排除的复杂改装中。此时可以继续检验相邻范围，或者保持常规自动处理、复杂任务由专业人员主导。</p>
+<p>第二种：初稿明显增加，但技术人员不能及时复核，最终答复未增加。此时扩大生成量可能只会扩大等待。下一步应先检查复核标准、信息质量和人员安排，而不是立即给更多员工开通同样功能。</p>
+<p>两种结果都产生了认识。试点的价值不必只来自宣布成功，也可以来自及时发现原先的投入方向不成立。停止一条不合适路径，是阶段选择的一部分。</p>
+<figure class="viz" data-visual="10-试点选择.svg"><svg xmlns="http://www.w3.org/2000/svg" width="360" height="494" viewBox="0 0 360 494" role="img" aria-label="试点结果导向不同投入：完整交付改善才考虑扩展；复核受阻先修流程；客户不采用则调整目标或停止。"><title id="title">结果决定下一笔投入</title><desc id="desc">相同试点入口根据交付、复核与客户采用的不同结果导向不同后续安排。</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#718578"/></marker></defs><rect width="360" height="494" fill="#f5f6f0" rx="10"/><text x="20" y="36" fill="#273b31" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="22" font-weight="650" text-anchor="start"><tspan x="20" dy="0">结果决定下一笔投入</tspan></text><rect x="20" y="219" width="104" height="72" rx="6" fill="#fff" stroke="#718578" stroke-width="1.5"/><text x="72" y="249" fill="#273b31" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="18" font-weight="400" text-anchor="middle"><tspan x="72" dy="0">试点</tspan><tspan x="72" dy="27.0">实际记录</tspan></text><polyline points="124,255 152,255 152,121 185,121" fill="none" stroke="#718578" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/><rect x="185" y="85" width="153" height="92" rx="6" fill="#fff" stroke="#35634e" stroke-width="1.5"/><text x="261" y="117" fill="#35634e" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="19" font-weight="400" text-anchor="middle"><tspan x="261" dy="0">交付改善</tspan><tspan x="261" dy="28.5">小步扩大</tspan></text><polyline points="124,255 152,255 152,255 185,255" fill="none" stroke="#718578" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/><rect x="185" y="219" width="153" height="92" rx="6" fill="#fff" stroke="#8b5617" stroke-width="1.5"/><text x="261" y="251" fill="#8b5617" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="19" font-weight="400" text-anchor="middle"><tspan x="261" dy="0">复核受阻</tspan><tspan x="261" dy="28.5">先修接续</tspan></text><polyline points="124,255 152,255 152,389 185,389" fill="none" stroke="#718578" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/><rect x="185" y="353" width="153" height="92" rx="6" fill="#fff" stroke="#a13228" stroke-width="1.5"/><text x="261" y="385" fill="#a13228" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="19" font-weight="400" text-anchor="middle"><tspan x="261" dy="0">客户不采用</tspan><tspan x="261" dy="28.5">改向或停止</tspan></text><text x="24" y="476" fill="#596a60" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="17" font-weight="400" text-anchor="start"><tspan x="24" dy="0">先分辨原因，再决定扩展范围</tspan></text></svg></figure>
+<h2 id="chapter-10--s5">扩大之前，把新问题说出来</h2>
+<p>试点常有额外关注：优秀人员参与、材料被提前清理、有人随时修复。扩大后这些条件可能无法原样保留。需要说明哪些是必要投入，哪些只是试点期的临时帮助，并把它们计入后续安排。</p>
+<p>一项可扩展的判断，可以这样表达：在什么任务范围和人员条件下，新做法改善了什么；哪些问题仍由人处理；扩大后最可能出现的限制是什么；出现什么结果会调整或暂停。</p>
+<p>试点结束后，如果还由同一位骨干补资料、改输出、催确认，团队就没有真正复制这项工作。扩大覆盖之前，需要把这些劳动落实到日常职责中。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#chapter-9">← 第9章｜FDE怎样把现场认识做进工程</a><a class="next" href="../index.html#chapter-11">第11章｜从一项职责组织人机协作 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

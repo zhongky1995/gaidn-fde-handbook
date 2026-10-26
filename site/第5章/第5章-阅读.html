@@ -1,0 +1,84 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第5章｜企业经验里究竟有什么</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#chapter-5">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">第3部分 · 让生产同时积累企业know-how</p><article><h1>第5章｜企业经验里究竟有什么</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#chapter-5--s1">一个答案留下了什么，又省略了什么</a></li><li><a href="#chapter-5--s2">把经验拆到能够讨论的程度</a></li><li><a href="#chapter-5--s3">过去为什么难以持续留下这些内容</a></li><li><a href="#chapter-5--s4">AI使哪些环节有了新的可能</a></li></ol></details>
+<p>公司有产品手册、操作规范和历史方案，新人遇到客户问题时却仍然要找老员工。这不一定说明资料太少。新人可能已经找到文件，却不知道这次能否沿用，应该先核对哪项条件。</p>
+<p>要讨论AI怎样帮助企业积累经验，先要弄清经验包含什么，以及它与保存一份成果有什么区别。</p>
+<h2 id="chapter-5--s1">一个答案留下了什么，又省略了什么</h2>
+<p>以下用一项设备服务任务作推演。客户问：“去年那套方案，这次增加一个班次，还能用吗？”旧文件保存了设备型号、价格和最终配置。新人照着看，觉得只要增加数量就行。</p>
+<p>老员工先问增加班次以后每天运行多久，再核对维护窗口、负荷与上次价格的成立条件。他发现旧报价含一次性优惠，而新的使用方式可能改变停机安排。因此，他没有立即答复能沿用，而是先向客户和供应方确认。</p>
+<p>两人都看到了旧方案，区别在于处理这份材料的方法。老员工知道哪些信号可能改变选择，哪些相似之处没有决定作用，以及去哪里取得缺失事实。</p>
+<p>如果最后只留下新价格和配置，下次接手的人仍然需要重新寻找这些理由。若同时保留使用条件的变化、排除的选项、选择理由和结果，下一次工作才有了更多依据。</p>
+<h2 id="chapter-5--s2">把经验拆到能够讨论的程度</h2>
+<p>一段可用经验通常包含几种相互联系的内容：当时的情境，值得注意的线索，作出的判断，采取的动作，以及后来得到的结果。还需要知道哪些条件会限制它的适用范围。</p>
+<p>情境说明这是什么客户、什么任务、什么约束。线索说明老员工注意到了什么。判断连接线索与选择，动作说明究竟做了什么，结果则给判断提供后续反馈。它们缺少任何一段，都可能使经验变成一句难以使用的口号。</p>
+<p>例如，“增加班次要谨慎”没有告诉新人怎么继续。若改成“先确认每天实际运行时长及维护窗口，因为同样增加一班可能产生不同负荷；本次供应方确认后才调整配置”，就出现了继续工作的路径。下一位人员仍要取得这次事实，不是照抄上次答案。</p>
+<p>这次任务如果只存旧文件与新文件，变化仍然难以理解。把修改与依据放到一起，下一位人员才能分辨哪些可以沿用：</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>留下的内容</th>
+<th>单独看它会误解什么</th>
+<th>还要连着哪项依据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>新配置</td>
+<td>以为所有增班都要同样更换</td>
+<td>实际运行、负荷与维护窗口怎样改变</td>
+</tr>
+<tr>
+<td>新报价</td>
+<td>以为差价只来自涨价</td>
+<td>一次性优惠是否结束，服务范围是否变化</td>
+</tr>
+<tr>
+<td>“客户已接受”</td>
+<td>以为方案已经验证有效</td>
+<td>采用的是哪个版本，后续使用与返工如何</td>
+</tr>
+</tbody></table></div>
+<p>经验也不都能完整写下来。观察设备、理解客户意图和协调人员，有些能力要靠练习、共同工作与反馈发展。能写下来的部分可以帮助接续，不能因为有了文字就宣称所有能力已被转移。</p>
+<h2 id="chapter-5--s3">过去为什么难以持续留下这些内容</h2>
+<p>传统系统擅长保存订单、金额、交付时间等明确记录。SOP能够把成熟步骤、责任和必要标准留下，这些贡献并不会因AI出现而失去意义。</p>
+<p>困难更多在于未被明确表达的选择。一个电话改变了方案，一位员工判断某条记录不可靠，或者一个例外使标准做法不适用。把这些内容还原出来，需要有人知道应该记录什么，并愿意花时间解释。</p>
+<p>结果又经常晚于判断出现。方案交出时不知道客户是否采用，服务结束后未必能把返工与最初的选择连起来。人员轮换以后，缺少的情境更难补回。最后企业留下不少成果，却仍需依赖少数人的临场说明。</p>
+<p>因此，问题不只是信息量不足，也包括记录和理由分开、理由和结果分开、材料找到了却不知道怎么用。改善分类可以处理其中一部分，无法单独解决全部问题。</p>
+<h2 id="chapter-5--s4">AI使哪些环节有了新的可能</h2>
+<p>AI可以先阅读已经产生的来信、讨论和修改，辅助整理事实与待确认项；也可以比较两个方案版本，提醒“这次为什么改了交期”尚无记录。当人员确认之后，这些内容能够与原任务关联。</p>
+<p>这里的机会，是把部分整理劳动放到实际工作中完成：当前任务正需要的材料，同时成为后续积累的入口。不必等项目结束很久，再让另一位人员从零采访和还原。</p>
+<p>但记录准确、理由成立和结果归因，仍然不是同一件事。模型可能把员工的猜测写成共同认识，也可能把一次偶然成功写成规律。所以企业需要保留原始依据，并知道哪些只是候选解释。</p>
+<p><a href="https://doi.org/10.1093/qje/qjae044" target="_blank" rel="noopener noreferrer">一项企业软件客服研究</a>跟踪了5,172名客服人员及AI建议系统的分批上线。系统在员工与客户聊天时给出响应建议，员工可以忽略或修改，仍由员工负责会话。历史对话中的处理方式，因此有机会在问题发生时被调用，而不只在事后培训中讲解。</p>
+<p>论文估计，取得AI支持后，平均每小时解决的问题数提高约15%。这个指标同时受单次处理时间、并行接待数量和成功解决比例影响，不能读成“所有员工省下15%的时间”。不同员工的变化也不相同：</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>人员与观察</th>
+<th>论文报告的变化</th>
+<th>怎样理解经验传播</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>经验较少、技能较低的员工</td>
+<td>速度和工作质量改善更明显</td>
+<td>原来不易掌握的诊断、追问和表达，可以在工作时得到支持</td>
+</tr>
+<tr>
+<td>最有经验、技能最高的员工</td>
+<td>速度收益较小，质量出现小幅下降</td>
+<td>已有成熟判断时，额外建议未必同样有用，甚至可能干扰</td>
+</tr>
+<tr>
+<td>不同难度与频率的问题</td>
+<td>中等少见的问题受益较大</td>
+<td>员工自己经验不足，而系统仍有足够相关材料时，建议更可能补上缺口</td>
+</tr>
+</tbody></table></div>
+<p>这几种变化使“整理历史对话”与“把建议送到当前会话”连起来：有经验的人会注意哪些线索、先问什么、怎样回应，可能通过系统影响其他人的处理。它并没有把所有人的能力拉到同一水平；有些收益也可能持续依赖系统。要知道人员自己留下了什么，还要继续看换任务、换人员或建议暂时不可用时的工作。</p>
+<p>如果AI整理的记录仍只剩最终型号与价格，老员工离开后，下一位人员还是得重新寻找理由。要减少这部分损耗，记录就要跟着当时的判断走，并在后来取得结果时回到原任务更新。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#chapter-4">← 第4章｜让AI接上企业的事实、方法和行动</a><a class="next" href="../index.html#chapter-6">第6章｜让一次生产留下下一次的依据 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

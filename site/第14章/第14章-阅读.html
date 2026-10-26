@@ -1,0 +1,57 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第14章｜企业购买和配置的是什么智能资源</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#chapter-14">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">第6部分 · 经营智能资源</p><article><h1>第14章 企业购买和配置的是什么智能资源</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#chapter-14--s1">token计量了什么</a></li><li><a href="#chapter-14--s2">能力、信息和安排共同影响结果</a></li><li><a href="#chapter-14--s3">根据任务后果配置支持</a></li><li><a href="#chapter-14--s4">从用量账走向任务账</a></li></ol></details>
+<p>过去，增加一份专业分析，往往意味着增加人的时间。现在，企业可以通过模型服务取得更多分析、构思和执行支持。这使智能资源的配置成为经营工作：哪些任务值得投入更强的能力，哪些可以沿确定规则处理，哪些需要更多现场事实或人的判断？</p>
+<h2 id="chapter-14--s1">token计量了什么</h2>
+<p>模型处理文字时，会把内容转成一串便于计算的单元，称为token。一个token不固定对应一个汉字或一个词；不同模型的切分方式也会不同。输入的材料、生成的内容，以及某些服务中的内部推理，都可能计入相应的用量。图像、声音等输入的计量方式，还取决于具体服务。</p>
+<p>token因而可以帮助企业观察部分模型资源消耗，却不能直接表示完成了多少有价值的工作。读了很长的过期材料，消耗会增加；反复生成同样的错误答案，也会增加。相同用量放在不同任务上，产出的质量和用途可能相差很大。</p>
+<p>具体价格、计费项、缓存和服务额度会变化，采购时需要按当前合同核对。经营判断不能长期绑定某个模型今天的单价，而要建立从调用记录到任务结果的对应关系。否则，企业只看见月账单，却不知道资源流向哪里。</p>
+<h2 id="chapter-14--s2">能力、信息和安排共同影响结果</h2>
+<p>面对复杂的设备适配问题，更强的模型可能改善分析，但它仍然需要当前工况。反过来，事实齐全却涉及相互冲突的约束，也可能需要更强的推理和专业人员参与。能力不足与材料不足，应分别处理。</p>
+<p>把更多计算投入一次任务，有时能让模型探索更多方案、检查中间结果，但收益取决于任务难度和计算的组织方式。关于<a href="https://arxiv.org/abs/2408.03314" target="_blank" rel="noopener noreferrer">推理时计算的研究</a>讨论的正是这种差异；它不能提供一条“多花一倍token就多获得多少营业收益”的通用比例。</p>
+<p>企业需要比较完整安排。例如，先用普通程序排除明显不满足的配置，再让模型解释剩余选择，最后请工程师判断关键工况，可能比把所有资料一次性交给最强模型更合适。也可能出现相反情况：前端为了节省少量调用费，产生大量不可靠候选，后端专家投入反而增加。</p>
+<p>比较方案时，需要把材料准备、模型处理、规则计算和人工判断一起列出来。换了其中一项，后面几项的劳动也可能跟着改变。</p>
+<h2 id="chapter-14--s3">根据任务后果配置支持</h2>
+<p>日常会议整理可以容忍一定措辞差异，只要关键事项准确；正式报价需要核对范围、金额和承诺；涉及设备安全的配置判断，还要有相应专业依据与责任安排。任务后果不同，所需的支持就不同。</p>
+<p>一种可行安排是先让成本较低的方式处理规则清楚的工作，遇到信息冲突、罕见条件或结果无法核对时，转交更强模型或专业人员。这里的难点是怎样识别需要转交的情况。模型说自己“很有把握”，不能独自充当可靠标准；企业应使用实际任务检验转交规则，观察遗漏了什么、是否把过多简单问题送给专家。</p>
+<p>也有任务不适合临时分流。例如，需要一致格式、稳定响应和严格计算的部分，可以采用固定流程。自由度并非越大越好。系统应当把智能用在确实需要解释和判断的地方，并用确定的程序承接已经明确的规则。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>当前任务的问题</th>
+<th>先补哪项支持</th>
+<th>何时考虑增加模型能力</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>当前价格、型号或工况缺失</td>
+<td>取得并确认事实</td>
+<td>事实齐备后仍处理不好相关关系</td>
+</tr>
+<tr>
+<td>金额加总、固定折扣规则</td>
+<td>确定程序与规则版本</td>
+<td>需要理解规则之外的文本条件</td>
+</tr>
+<tr>
+<td>多份材料互相冲突</td>
+<td>保留来源，让有权限的人确认</td>
+<td>辅助定位冲突与比较解释</td>
+</tr>
+<tr>
+<td>条件齐全，但候选取舍复杂</td>
+<td>更强分析与专业复核</td>
+<td>用任务比较确认新增投入的作用</td>
+</tr>
+</tbody></table></div>
+<h2 id="chapter-14--s4">从用量账走向任务账</h2>
+<p>要知道资源是否值得，至少需要把调用归到实际业务事项：服务哪个任务，采用了什么资料和能力，产生了什么候选结果，经过多少人工处理，最终是否交付。敏感材料的可见范围仍按原有职责控制，记录用途不意味着扩大访问。</p>
+<p>接下来才有条件比较：某类任务使用更强模型后，合格率有没有提高；长资料压缩后，节约的费用是否被漏信息造成的返工抵消；直接使用普通软件是否已能满足需要。</p>
+<p>一笔调用消耗了token，也许交出一份可用候选，也许只产生了待核查文本。把它与任务编号、人工处理和最终交付对应起来，企业才知道费用花在了哪种工作上。方法、事实和评价材料如果被后续任务继续采用，才有了消费之外的积累。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#chapter-13">← 第13章｜质量怎样成为日常工作的一部分</a><a class="next" href="../index.html#chapter-15">第15章｜让局部速度变成合格交付与收益 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

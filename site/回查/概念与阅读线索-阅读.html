@@ -1,0 +1,101 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>概念回查｜从工作问题找到解释</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#concepts">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">按需回查</p><article><h1>概念回查｜从工作问题找到解释</h1>
+<p>按你正在遇到的问题查找即可。这里的短解释用于找回关系，完整推理在对应章节。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>遇到的问题</th>
+<th>相关概念与简要解释</th>
+<th>回到正文</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AI写得更多，为什么业务没增加？</td>
+<td>能力先改变工作，工作再经过交付、客户采用和价值获取才可能形成经营结果。中间任何一环都可能限制收益。</td>
+<td><a href="../index.html#chapter-2">第2章</a>、<a href="../index.html#chapter-15">第15章</a></td>
+</tr>
+<tr>
+<td>模型很强，为什么不知道我们的当前价格？</td>
+<td>训练形成广泛能力；当前任务需要的企业事实，还要通过输入、检索或工具提供。输入本身不会自动更新模型参数。</td>
+<td><a href="../index.html#chapter-3">第3章</a></td>
+</tr>
+<tr>
+<td>资料库已经很大，为什么还会答错？</td>
+<td>保存与使用是不同工作。当前上下文是这次调用实际取得的材料；检索是从外部资料中寻找相关内容。取得内容后仍要判断版本、范围和适用性。</td>
+<td><a href="../index.html#chapter-4">第4章</a>、<a href="../index.html#chapter-12">第12章</a></td>
+</tr>
+<tr>
+<td>Agent与自动流程有什么区别？</td>
+<td>工作流按预设路径组织步骤；Agent让模型根据当前情况选择部分后续动作和工具。两者可以结合，自由度增加也带来新的评价与维护工作。</td>
+<td><a href="../index.html#chapter-4">第4章</a></td>
+</tr>
+<tr>
+<td>AI说已处理，是不是就完成了？</td>
+<td>工具是模型连接外部读取或行动的能力。提议、提交、外部系统接收、实际完成是不同状态，需要相应依据。</td>
+<td><a href="../index.html#chapter-12">第12章</a></td>
+</tr>
+<tr>
+<td>企业know-how到底是什么？</td>
+<td>在具体条件下，识别线索、作出判断并组织行动的经验。它包含理由和适用条件，往往散在人与协作中，不能仅靠一份结果文件完整表示。</td>
+<td><a href="../index.html#chapter-5">第5章</a></td>
+</tr>
+<tr>
+<td>AI总结了工作，是不是企业就学会了？</td>
+<td>总结先是候选认识。经过核查、后续采用和变化条件下的检验，才有理由认为它成为可用方法；还要看维护代价。</td>
+<td><a href="../index.html#chapter-6">第6章</a>、<a href="../index.html#chapter-7">第7章</a></td>
+</tr>
+<tr>
+<td>定制越多，竞争力越强吗？</td>
+<td>有价值的差异应当解释客户为什么选择企业。定制只是手段，旧习惯和信息混乱造成的特殊步骤也可能需要取消。</td>
+<td><a href="../index.html#chapter-8">第8章</a></td>
+</tr>
+<tr>
+<td>什么时候需要FDE？</td>
+<td>问题依赖现场认识，且需要把认识做进工程并在使用中调整时，连续的现场工程力量可能有价值。应与采购、实施、内部开发比较实际缺口。</td>
+<td><a href="../index.html#chapter-9">第9章</a>、<a href="../index.html#chapter-17">第17章</a></td>
+</tr>
+<tr>
+<td>试点成功，为什么还不能全面推开？</td>
+<td>小范围完整交付仍可能依赖专家、额外劳动、特定任务或临时支持。扩大前要确认这些条件能否持续。</td>
+<td><a href="../index.html#chapter-10">第10章</a></td>
+</tr>
+<tr>
+<td>人只在最后签字，够不够？</td>
+<td>职责需要有判断依据、权限、例外处置和交接。只看到最终文字的人，可能无法真正承担审核。</td>
+<td><a href="../index.html#chapter-11">第11章</a></td>
+</tr>
+<tr>
+<td>质量检查该看什么？</td>
+<td>依据是否可靠、判断是否适用、动作是否完成、客户能否采用，分别需要程序、专业判断和实际反馈支持。评价材料也需要更新。</td>
+<td><a href="../index.html#chapter-13">第13章</a></td>
+</tr>
+<tr>
+<td>token用量大，是否说明积累多？</td>
+<td>token是模型资源的部分计量单位。消耗与可复用经验、合格交付、收益处在不同层次；要沿实际任务建立对应关系。</td>
+<td><a href="../index.html#chapter-14">第14章</a></td>
+</tr>
+<tr>
+<td>AI更贵，会不会反而更划算？</td>
+<td>取决于完整人工劳动、通过率、岗位瓶颈、需求和费用。第15章给出可重算的教学例子，也说明有利结果会随需求改变。</td>
+<td><a href="../index.html#chapter-15">第15章</a></td>
+</tr>
+<tr>
+<td>当前看不到收益，要不要继续？</td>
+<td>区分运行、能力维护和新探索分别需要的证据。早期投入可能有互补建设的作用，也可能失败；需要有条件地继续。</td>
+<td><a href="../index.html#chapter-16">第16章</a></td>
+</tr>
+<tr>
+<td>一套成功方法能不能复制到所有客户？</td>
+<td>组件、事实、判断规则和交付条件的可迁移程度不同。迁移应重新检验价值形成机制，新服务还需要采用与付费证据。</td>
+<td><a href="../index.html#chapter-18">第18章</a></td>
+</tr>
+</tbody></table></div>
+<p>要把这些关系用到一家企业，回到<a href="../index.html#chapter-19">第19章</a>，再用<a href="../index.html#workbook">工作簿</a>检验提案。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#workbook">← 工作簿｜检验一份企业AI发展提案</a><a class="next" href="../index.html#sources">研究与来源｜事实、机制与采用范围 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

@@ -1,0 +1,116 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第18章｜怎样迁移经验并发展新服务</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#chapter-18">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">第7部分 · 企业与AI如何共同演进</p><article><h1>第18章 怎样迁移经验并发展新服务</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#chapter-18--s1">可以复制的组件与需要重新理解的业务</a></li><li><a href="#chapter-18--s2">迁移也会改变原来的优势</a></li><li><a href="#chapter-18--s3">新服务需要新的采用证据</a></li><li><a href="#chapter-18--s4">哪些东西逐渐难以被复制</a></li></ol></details>
+<p>一个流程运行稳定以后，企业自然会问：能否用于其他团队、客户和业务？AI让部分信息处理和方法调用更容易复制，却没有消除业务条件的差异。迁移时，真正需要判断的是原来为什么有效，以及新的地方是否具备相应条件。</p>
+<h2 id="chapter-18--s1">可以复制的组件与需要重新理解的业务</h2>
+<p>设备服务企业已经能为普通加工厂准备报价。现在，它想服务连续运行、停机代价很高的生产线。资料检索、版本记录和任务交接等组件仍可能有用，但适配判断、施工窗口、备件要求和责任安排都发生了变化。</p>
+<p>如果只把客户名称换掉，系统可能用同一种报价形式遮住这些差异。更稳妥的迁移，是分别查看：哪些处理方法可以沿用，哪些事实需要重新取得，哪些判断规则已经不适用，以及谁能够确认新的质量标准。</p>
+<p>经验的价值由此体现为帮助企业更快认识新问题，而不一定是原规则原封不动地使用。能够指出“这里和以前不同”，有时比快速生成一份熟悉文档更有价值。</p>
+<p>迁移到连续生产线时，可以把原来的一套安排分开看：</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>原有内容</th>
+<th>是否直接沿用</th>
+<th>新范围要补什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>事项编号、版本与确认记录</td>
+<td>通常可保留工程组件</td>
+<td>接入新岗位和权限</td>
+</tr>
+<tr>
+<td>普通加工厂的停机安排</td>
+<td>不能直接当承诺</td>
+<td>实际停机损失、切换窗口与恢复条件</td>
+</tr>
+<tr>
+<td>供应查询与预留机制</td>
+<td>可复用机制，重核来源</td>
+<td>特殊备件、供应范围和保留条件</td>
+</tr>
+<tr>
+<td>原来成功的配置</td>
+<td>只作候选依据</td>
+<td>新工况、质量标准与专业确认</td>
+</tr>
+</tbody></table></div>
+<h2 id="chapter-18--s2">迁移也会改变原来的优势</h2>
+<p>某企业的优势来自资深工程师深入现场，客户愿意付费，是因为它总能提前发现施工中的麻烦。用AI把过去的问题整理出来，可能使更多员工获得这种观察支持，但扩大服务以后，现场调查时间、客户配合程度和专业复核能力都要跟着变化。</p>
+<p>如果为了覆盖更多客户而省掉现场了解，企业可能同时削弱了优势的来源。扩大规模要复制的是形成价值的配合关系，而不只是最后一份方案。第8章强调的客户价值与现场机制，在迁移时需要重新检查。</p>
+<p>也可能出现另一种结果：AI使远程材料分析足以解决部分标准问题，企业可以区分远程基础服务与深入现场的复杂服务。原来的单一交付由此发展出层次，但每一层都要说清能解决什么、需要什么输入，以及何时应升级服务。</p>
+<h2 id="chapter-18--s3">新服务需要新的采用证据</h2>
+<p>整理生产数据以后，企业可能想提供运行建议、预防性维护或持续优化服务。技术上能够形成建议，只是其中一步。客户是否愿意持续提供资料，建议能否改变现场动作，谁来承担实施责任，改善是否值得新增服务费，仍需要分别验证。</p>
+<p>沿用前面预留4小时的小服务，假设一位老客户想减少维护安排中的重复停机，愿意试一次远程分析。客户提供实际运行时长、已经做过的维护记录和下一阶段生产计划，并指定一位能协调现场的负责人。工程师先确认资料足以讨论哪些问题；缺少依据的设备状态不作判断。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>这次工作取得什么</th>
+<th>怎样继续</th>
+<th>客户最后得到什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>运行与维护记录</td>
+<td>AI按设备和日期归并，标出缺项与重复安排</td>
+<td>一份可以核对原记录的事实清单</td>
+</tr>
+<tr>
+<td>两项维护原计划分别停机</td>
+<td>AI列为待讨论选项，工程师按设备规范核查能否同次进行</td>
+<td>有理由、有限制的候选安排</td>
+</tr>
+<tr>
+<td>客户可接受的停机窗口</td>
+<td>客户负责人确认时间，工程师确认适用条件</td>
+<td>经双方确认的维护安排</td>
+</tr>
+<tr>
+<td>现场实际执行记录</td>
+<td>对照原建议核查采用了哪部分、为何改变</td>
+<td>下一轮需要保留或修正的依据</td>
+</tr>
+</tbody></table></div>
+<p>这里，报告只负责把判断送到可执行的安排。若客户没有能协调现场的人，即使认可文字，也可能不改变任何动作；若工程师确认两项维护不宜合并，就保留原顺序，不能为了让报告显得有效而硬改。</p>
+<p>现在比较两种可能的试用反馈，仍为教学推演。第一种，客户按确认后的安排完成了相应工作，也愿意提供下一期记录。企业因此取得了服务可以接续的证据，可以再测试下一期是否仍需要新的判断，客户是否愿意按明确范围付费。一次安排解决了问题，也可能只值得收一次服务费，不能直接据此推成长期订阅。</p>
+<p>第二种，客户虽说内容不错，却没有提供缺失记录，也没有人员执行；或者每次分析都需要大量追问，原计划4小时变成7小时。前者要先解决配合或缩小承诺；后者要把新增专业时间计入报价。收费和其他支出不变时，多投入的时间会减少这项服务留下的余额。客户若不接受与实际支持范围相称的价格，就需要改变范围、提供方式或停止继续做。</p>
+<p>按报告数量收费，容易让企业不断交新文档；按持续服务收费，则要明确资料要求、响应、维护与责任。把收费绑定某项改善时，还要确认怎样分辨企业建议、客户行动和其他条件的影响。服务能产生内容、能够被采用、有人愿意持续支付，是需要先后取得证据的几件事。</p>
+<h2 id="chapter-18--s4">哪些东西逐渐难以被复制</h2>
+<p>通用模型能力会被许多企业取得，单独依靠同一个通用提示词，很难长期解释客户为什么选择你。更有意义的差异，可能形成于特定客户理解、可采用的经验、可靠交付、组织协作和持续调整之间的组合。</p>
+<p>这些条件并非一经形成就永久有效。客户需要改变，竞争者可能学会其中一部分，新技术也可能使原来稀缺的能力变得普遍。企业需要继续观察哪些做法仍为客户创造价值，以及哪些旧投入已经不值得维护。</p>
+<p>假设同行也取得了同一种模型和相似软件。它已经能快速生成选型说明，通用表达上的差别就缩小了。对于资料完整、交付标准的客户，如果同行价格更低，原企业未必还有理由坚持收取较高服务费。</p>
+<p>换成停机窗口紧、旧设备多次改装的客户，比较会改变。原企业如果保留了获授权的工况、维护与实施结果，又能协调备件和安装，就可以更快提出能兑现的安排。同行要取得相同理解，需要客户配合提供资料、专业人员确认，并建立相应交付条件。AI可以减少部分整理劳动，但不能凭文字补出这些关系。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>同行追赶到哪里</th>
+<th>原企业的差别怎样变化</th>
+<th>接下来应查什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>能使用同样模型，快速准备说明</td>
+<td>文档与表达优势缩小</td>
+<td>客户是否仍需要额外核查和协调</td>
+</tr>
+<tr>
+<td>客户把完整历史也提供给同行</td>
+<td>信息取得优势进一步缩小</td>
+<td>现有判断与交付是否仍更可靠</td>
+</tr>
+<tr>
+<td>同行也具备相应供应与安装配合</td>
+<td>原有服务组合更容易替代</td>
+<td>是否需要降低成本、改变范围或发展新服务</td>
+</tr>
+</tbody></table></div>
+<p>客户可以选择替代方案，原有经验也会失去稀缺性。持续投入要围绕仍被客户需要、同时能实际交付的部分。若旧优势已能被低成本复制，就应改变安排，不能只因为积累了很多记录而继续维护同样的高成本服务。</p>
+<p>企业可以先复用版本和交接组件，保留熟悉业务的运行，再为新工况安排调查与小范围服务。若新范围需要的专业支持超出当前能力，就缩小承诺或补充力量；若客户不采用，则重新检查需求，而不是继续扩充报告功能。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#chapter-17">← 第17章｜长期FDE合作与企业内部成长</a><a class="next" href="../index.html#chapter-19">第19章｜形成企业自己的AI发展提案 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第11章｜从一项职责组织人机协作</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#chapter-11">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">第5部分 · 组织持续运行的人机生产</p><article><h1>第11章 从一项职责组织人机协作</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#chapter-11--s1">一份报价是谁的工作</a></li><li><a href="#chapter-11--s2">分工会改变岗位内部的重心</a></li><li><a href="#chapter-11--s3">交接需要留下可以接手的状态</a></li><li><a href="#chapter-11--s4">伙伴关系需要可提出异议</a></li></ol></details>
+<p>试点中，一位业务骨干往往把许多事情一起承担：补资料、判断例外、修改AI输出、催促审批，再告诉客户结果。他使流程顺利跑通，也可能使团队误以为系统已经能独立工作。进入日常生产以后，真正需要复制的是一项职责的完成条件。</p>
+<h2 id="chapter-11--s1">一份报价是谁的工作</h2>
+<p>设备服务企业让AI协助制作报价。它能查配置、归纳需求、生成方案，也能把待确认事项列出来。但报价发出后，企业需要按承诺交货、施工和提供服务。负责报价的人必须能够说明：为什么这个配置适用，哪些费用已经包含，什么条件下交期才成立，以及哪些事项还需要客户确认。</p>
+<p>因此，安排AI工作时，先看这项职责要对谁交付什么，再分配其中的动作。资料整理可以由AI承担；价格计算适合交给已有规则明确的计算程序；设备是否适用于异常工况，需要具备专业判断的人确认；对外承诺则要落在有相应权限的负责人名下。</p>
+<p>同一个人不必亲自执行所有动作，但应能看到决定交付是否成立的事实。若他只能看到一段流畅结论，而看不到采用的配置、报价依据和未决条件，签字就很容易变成形式。把“人最后审核”写进流程，还没有解决审核者凭什么判断的问题。</p>
+<p>同一份报价中，人员需要接收的并非同一种输出：</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>工作</th>
+<th>AI或程序交出什么</th>
+<th>谁接手、凭什么决定</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>理解需求</td>
+<td>原话、已知条件、缺项与冲突</td>
+<td>销售向客户确认，保留确认内容</td>
+</tr>
+<tr>
+<td>比较适配</td>
+<td>候选配置及各自依据</td>
+<td>工程师核工况，决定适用范围</td>
+</tr>
+<tr>
+<td>算价与交期</td>
+<td>按规则计算的金额，实际供应返回</td>
+<td>商务与供应负责人核授权、可用性</td>
+</tr>
+<tr>
+<td>对外承诺</td>
+<td>明确版本与未决条件的草稿</td>
+<td>授权负责人接受承诺范围后发送</td>
+</tr>
+<tr>
+<td>出现例外</td>
+<td>异常事项及先前动作记录</td>
+<td>有权限的人处置，并更新原事项</td>
+</tr>
+</tbody></table></div>
+<p>如果某一列只有“人工审核”，还要继续问：这个人拿到哪些依据，可以否决什么，无法决定时交给谁。</p>
+<h2 id="chapter-11--s2">分工会改变岗位内部的重心</h2>
+<p>过去，业务员可能花大半时间找资料和拼文档，只有少量时间澄清客户需求。AI承担了整理以后，岗位不会自动变得轻松：更多方案更快进入复核，客户也可能提出更细的要求。原来稀缺的资料准备能力，可能变成专业复核、客户沟通或现场执行能力。</p>
+<p>企业需要重新决定岗位的工作重点。例如，让初级员工借助AI准备资料，由资深工程师集中处理真正有分歧的工况；让商务人员把时间用于客户的取舍和承诺，而不是不断改格式。这些安排能否成立，取决于初级员工是否能识别该升级的问题，以及资深人员是否真的获得足够信息。</p>
+<p>假如所有输出都被送给同一位专家重新做一遍，AI增加的只是前端流量。假如为了减轻专家压力而取消复核，企业又可能把工作速度建立在更高的错误率上。岗位调整要沿实际工作量和判断难度进行，不能只按“节省了多少写作时间”安排人手。</p>
+<h2 id="chapter-11--s3">交接需要留下可以接手的状态</h2>
+<p>跨岗位协作最容易丢失的，往往是事情为什么停在这里。</p>
+<p>一份报价的记录若只有“处理中”，下一位接手者仍要把事情重新问一遍。更有用的状态是：客户已确认产能要求；现场电源条件待查；基础配置已选定；交期尚未获得供应方确认；下一步由谁在什么条件下推进。AI可以整理这些状态，但状态的依据必须来自实际交流或操作结果。</p>
+<p>这样交接的是仍在进行的一件事。新人不必重新发明整个方案，也不会把前人的假设误当成已确认事实。第6章讨论的生产材料，便在这里直接减少衔接损耗：同一份记录既支持当前接手，又留下以后分析反复阻塞之处的依据。</p>
+<p>当销售或工程师换人时，新人可以接着同一事项继续。AI整理的内容要能回到当前记录，岗位交接才不必再从一段聊天里猜测进度。</p>
+<h2 id="chapter-11--s4">伙伴关系需要可提出异议</h2>
+<p>把AI看作智能伙伴，意味着人可以借它扩展观察、比较和行动，也需要允许它暴露信息不足和相互冲突的条件。一位优秀协作者会说“这份交期承诺没有供应方确认”，而不是为了显得能干就把计划写完整。</p>
+<p>企业也要允许人对AI提出的建议作出有依据的修正。若考核只奖励采纳率或处理量，员工可能绕过复杂问题，或者把必要的反对意见当作流程障碍。系统记录了很多“成功”，却更难认识自身能力的边界。</p>
+<p>如果系统提出的方案突破了原有价格或交期授权，事项就应转给能决定的人。让AI继续写一份更确定的答复，不会增加销售的权限，也不会增加仓库中的库存。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#chapter-10">← 第10章｜让试点回答下一笔投入</a><a class="next" href="../index.html#chapter-12">第12章｜让信息与动作保持真实 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

@@ -1,0 +1,67 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第1章｜AI使哪些工作重新值得做</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#chapter-1">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">第1部分 · 企业的生产为什么会因AI而改变</p><article><h1>第1章｜AI使哪些工作重新值得做</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#chapter-1--s1">从原话到一个可以调查的问题</a></li><li><a href="#chapter-1--s2">专业时间的限制可以重新安排</a></li><li><a href="#chapter-1--s3">文字背后是多种工作</a></li><li><a href="#chapter-1--s4">哪些事情开始值得重新考虑</a></li></ol></details>
+<p>经营中有许多事情，知道值得做，却没有足够的人认真做。销售只能为少数重点客户准备详细方案，售后只能集中分析严重投诉，负责人也许一个月才有时间把分散的反馈放在一起看。企业需要的是更充分的理解和更及时的行动，能够投入的专业时间却始终有限。</p>
+<p>AI带来的一个重要变化，是其中一部分阅读、分析、构思和表达，可以交给已有模型先承担。人能够提供材料和目标，取得一轮结果，核对、补充，再要求它调整。这使企业有机会重新安排专业时间，也重新考虑过去做得太少、太粗或根本没有开始的工作。</p>
+<p>能够处理语言、生成内容的生成式AI，已经可以接手这类工作的部分准备。具体能接手多少，可以从一项简单任务看起。</p>
+<h2 id="chapter-1--s1">从原话到一个可以调查的问题</h2>
+<p>下面是一组课程编写的假设材料。一位网店负责人收到三条反馈：</p>
+<blockquote>
+<p>“地址都填好了，没找到提交订单的按钮。”</p>
+<p>“第一次买，点了保存地址，以为就买好了。”</p>
+<p>“填完地址不知道接着点哪里，后来退出了。”</p>
+</blockquote>
+<p>负责人想决定先检查哪里。只把原话缩短成“客户不会下单”，帮助有限。一个可以交给AI的任务是：找出共同涉及的操作，列出已有线索、可能原因和仍缺的信息。</p>
+<p>一份可供核查的分析可以这样写：三条反馈都涉及填写或保存地址后的操作；第一条找不到提交按钮，第二条把保存地址当成完成购买，第三条明确说不知道下一步并退出。因此，可以先调查保存地址与提交订单之间的提示和入口。还需要知道客户看到的页面、设备以及最终订单状态，才能决定改什么。</p>
+<p>这里发生的工作包括理解不同表达、寻找共同关系、提出候选解释和识别缺口。AI没有看过实际页面，也没有证明原因。负责人能够对照三条原话检查归纳，再去观察真实操作。工作已经从“面对零散反馈”推进到“知道要调查什么”。</p>
+<p>随后还可以请AI准备观察安排，或者根据查到的原因拟出候选改法。若发现客户能看见入口，却把保存地址当作最后一步，可以比较补充提示与调整页面顺序；若是某种设备没有显示按钮，单改提示就不对。新事实会改变方案，而不是只让原方案写得更漂亮。</p>
+<p>三句话，一个人也能看懂。材料增加以后，困难会转到持续处理：哪些反馈是新出现的，哪些一直重复，哪些虽然很少却可能造成严重后果？如果负责人只在投诉升级时回看，其余材料就很难进入日常判断。</p>
+<h2 id="chapter-1--s2">专业时间的限制可以重新安排</h2>
+<p>过去，负责人可能只看金额大、投诉重或恰好被转发的问题。假如AI能对每批可取得的反馈先归并线索，并保留相应原话，负责人就可能把更多时间用于核对重要变化和调查原因。原来只能偶尔做的比较，有机会更经常地发生。</p>
+<p>专业时间可以朝几个方向重新安排，它们对应的投入与观察也不同。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>原来没有做充分的工作</th>
+<th>AI接手的准备</th>
+<th>人继续做什么</th>
+<th>需要观察的结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>只看严重投诉</td>
+<td>归并全部可取得的反馈，保留原话与异常</td>
+<td>核对重要变化，调查原因</td>
+<td>是否更早发现值得处理的问题</td>
+</tr>
+<tr>
+<td>普通客户只得到通用答复</td>
+<td>根据已知条件准备个别化追问</td>
+<td>确认条件，判断建议能否采用</td>
+<td>是否增加可完成的有效服务</td>
+</tr>
+<tr>
+<td>只比较一个方案</td>
+<td>整理不同选项及其依据</td>
+<td>排除不适用项，决定试什么</td>
+<td>是否改善选择，新增复核是否划算</td>
+</tr>
+</tbody></table></div>
+<p>其中有的减少原有劳动，有的增加覆盖，有的加深服务。若原来没有做过某项工作，采用AI后首次开始做它，总劳动可能增加，企业取得的则是过去没有的观察或服务。</p>
+<p>它们也都需要具体条件。记录必须能够取得，时间、客户类型或页面版本需要有依据；少见却严重的问题不能在归类时消失；提出的问题必须有人继续处理。新增的整理、核对和接入劳动，仍要计入总投入。</p>
+<p>如果员工需要把全部材料重新分析一遍，AI可能没有减少重复劳动。相反，若它使人工能够更早发现变化，并把原来没有得到服务的任务带进处理范围，企业就获得了一种不同的工作安排。</p>
+<h2 id="chapter-1--s3">文字背后是多种工作</h2>
+<p>文案、方案、报告和计划最后都可能是一段文字，但它们背后的任务不同。读懂客户要求、比较两种做法、提出一个新方案、安排下一次调查，需要不同的信息和判断标准。AI能参与这些工作，不意味着只要文字流畅，所有任务就同时完成。</p>
+<p>对企业来说，可以把这种能力理解为可针对具体任务调用的智能：材料是什么，想推进什么问题，结果怎样核查，都能在使用时说明。它与人员的结合方式也可以改变。有的任务适合AI先准备、人再判断；有的常规处理可以在检验后由系统继续；有的关键选择仍需专业人员主导。</p>
+<p>例如，AI整理出一组可追问的问题以后，负责人可以把时间放在查看页面和观察用户操作上。这次改变的是准备与调查的分工。若AI能调用反馈系统，也仍需规定它可以读取哪些记录，怎样保留原话，以及哪些异常直接交给人。</p>
+<h2 id="chapter-1--s4">哪些事情开始值得重新考虑</h2>
+<p>你可以回到自己企业想一件具体的事：过去因为需要投入太多专业时间而没有做，或者只为少数对象做得充分的工作。如果其中一部分理解、分析和准备可以更容易获得，原来的取舍会怎样变化？</p>
+<p>这可能是为普通客户提供更细的选型建议，也可能是及时检查服务中的异常，或者更快比较新产品的不同构想。它们首先是一批值得重新评估的机会，还不是已经取得的收益。</p>
+<p>接下来的问题便是：工作做得更快、更广或更深以后，客户为什么需要，企业怎样兑现？这决定哪些能力值得发展。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#start">← 导学｜把智能变成企业自己的能力</a><a class="next" href="../index.html#chapter-2">第2章｜能力怎样变成客户愿意要的价值 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>

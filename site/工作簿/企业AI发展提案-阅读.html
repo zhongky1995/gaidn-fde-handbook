@@ -1,0 +1,227 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>工作簿｜检验一份企业AI发展提案</title><style>
+:root{color-scheme:light;--ink:#273b31;--muted:#627168;--paper:#faf9f5;--line:#d8dfd5;--accent:#35634e;--soft:#edf1e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.95 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.015em}button,input{font:inherit}button,a,summary{touch-action:manipulation}a{color:var(--accent);text-underline-offset:4px;overflow-wrap:anywhere}button{cursor:pointer;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--accent);padding:6px 13px;font-size:14px}a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,.table-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:4px}button:hover{background:var(--soft)}[hidden]{display:none!important}
+header{max-width:1080px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line)}.brand{font-size:15px;text-decoration:none;font-weight:600;letter-spacing:.05em}.actions{display:flex;gap:10px;flex-shrink:0}main{max-width:900px;margin:auto;padding:50px 48px 90px;outline:none}.eyebrow{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 18px}h1{font-size:35px;line-height:1.5;letter-spacing:0;margin:0 0 26px;font-weight:650}h2{font-size:25px;line-height:1.65;margin:52px 0 22px;padding-top:15px;border-top:1px solid var(--line);scroll-margin-top:24px}h3{font-size:21px;margin:35px 0 18px}p{margin:0 0 24px}ul,ol{padding-left:1.4em;margin:24px 0}li{margin:10px 0}li>p{margin-bottom:12px}blockquote{margin:28px 0;padding:18px 24px;border-left:3px solid #789481;background:var(--soft);font-size:17px}blockquote p:last-child{margin-bottom:0}.contents{font-size:15px;color:var(--muted);margin:0 0 34px}.contents ol{margin:14px 0}.contents li{margin:6px 0}summary{cursor:pointer;color:var(--accent)}article>details:not(.contents){margin:28px 0;padding:18px 22px;border:1px solid var(--line);border-radius:6px}article>details h2{margin-top:28px}.table-wrap{overflow-x:auto;margin:28px 0;max-width:100%}table{border-collapse:collapse;width:100%;min-width:550px;font-size:15px;line-height:1.8}th,td{text-align:left;vertical-align:top;padding:13px;border:1px solid var(--line)}th{background:var(--soft);font-weight:600}td:first-child{min-width:110px}img{display:block;max-width:100%;height:auto}.viz{margin:38px 0;break-inside:avoid}.viz img,.viz svg{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;border:1px solid var(--line);border-radius:9px}code{font-size:.9em;background:var(--soft);padding:2px 4px}pre{overflow:auto;background:var(--soft);padding:20px}pre code{padding:0}footer{margin-top:52px;border-top:1px solid var(--line);padding-top:24px;font-size:15px}.page-nav{display:flex;gap:24px;justify-content:space-between;align-items:flex-start}.page-nav a{max-width:48%}.page-nav .next{margin-left:auto;text-align:right;font-weight:600}.quiet{color:var(--muted);font-size:14px}.resume{max-width:804px;margin:20px auto 0;padding:12px 18px;background:var(--soft);font-size:14px;display:flex;align-items:center;justify-content:space-between;gap:15px}.resume button{background:var(--paper)}.status{max-width:804px;margin:12px auto;padding:10px 18px;color:var(--muted);font-size:14px}.mobile-nav{display:none}
+dialog{border:1px solid var(--line);border-radius:10px;padding:25px 28px;max-width:680px;width:calc(100% - 32px);max-height:85dvh;background:var(--paper);color:var(--ink);font-size:16px}dialog::backdrop{background:#18281e66}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:14px}.dialog-head h2{font-size:23px;border:0;margin:0;padding:0}dialog section{border-top:1px solid var(--line);padding:14px 0}dialog section ol{margin:12px 0;padding-left:1.4em}dialog section h3{font-size:17px;margin:0 0 10px} .start-action a{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:8px 18px;border-radius:5px;font-size:16px} dialog nav>a{display:block;margin:15px 0}dialog a[aria-current=page]{font-weight:700}input[type=search]{width:100%;min-width:0;background:white;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:17px}#search-results{padding:0;list-style:none}#search-results li{border-bottom:1px solid var(--line);padding:12px 0}#search-results a{font-weight:600}#search-results p{font-size:14px;color:var(--muted);margin:6px 0 0;line-height:1.8}
+@media(max-width:600px){body{font-size:17px;line-height:1.95}header{padding:13px 18px;gap:10px}.brand{font-size:13px;letter-spacing:0}.actions{gap:6px}.actions button{padding:5px 10px}main{padding:32px 22px 100px}h1{font-size:28px}h2{font-size:23px;margin-top:42px}h3{font-size:20px}blockquote{padding:15px 18px;font-size:16px}td,th{padding:10px}.resume{margin:12px 18px 0;align-items:flex-start}.status{margin:10px 18px}.mobile-nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#faf9f5f5;border-top:1px solid var(--line);padding:8px 18px max(8px,env(safe-area-inset-bottom));font-size:14px;z-index:2}.mobile-nav a{text-decoration:none}.mobile-nav button{padding:4px 11px}dialog{padding:20px;max-height:88dvh}.page-nav{gap:16px}article>details:not(.contents){padding:15px}.table-wrap{margin:23px 0}}
+@media(max-width:380px){main{padding-left:12px;padding-right:12px}.viz{margin-left:-4px;margin-right:-4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header,.resume,.mobile-nav,dialog,.contents,footer,#status{display:none!important}body{background:white;font-size:11pt}main{max-width:none;padding:0}h2{break-after:avoid}table{min-width:0;font-size:10pt}a{color:inherit}article>details{display:block}.table-wrap{overflow:visible}}
+</style></head><body><header><a class="brand" href="../index.html#workbook">进入全课阅读</a><a href="../index.html#start">导学</a></header><main><p class="eyebrow">可选工作簿</p><article><h1>工作簿｜检验一份企业AI发展提案</h1><details class="contents"><summary>本页内容</summary><ol><li><a href="#workbook--s1">一家包装设计企业准备怎样采用AI</a></li><li><a href="#workbook--s2">请你判断</a></li><li><a href="#workbook--s3">参考分析：先改变有效方案的生产</a></li><li><a href="#workbook--s4">第二轮：取得材料以后，下一笔投入投哪里</a></li><li><a href="#workbook--s5">变化一：客户不允许使用其他客户材料</a></li><li><a href="#workbook--s6">变化二：需求不多，能否试做一种新服务</a></li><li><a href="#workbook--s7">最后一轮：让几项发展工作竞争同一份资源</a></li><li><a href="#workbook--s8">写自己的提案</a></li></ol></details>
+<p>以下企业、材料与提案均为教学设定。你只需使用这里提供的事实判断；尚未提供的数据应明确列为未知，不必自行补成真实成绩。可以先读到“请你判断”为止，写下选择，再展开参考分析。</p>
+<h2 id="workbook--s1">一家包装设计企业准备怎样采用AI</h2>
+<p>这家企业为食品品牌制作包装方案。客户选择它的重要原因，是设计师能把品牌想法、货架识别和实际印刷条件放在一起考虑。团队发现一种经常被新人忽略的情况：屏幕上好看的图案，换到特定包装材料后，细节和颜色表现可能不合适。资深人员会结合客户产品、材料和印刷工艺调整方案。</p>
+<p>目前，新人负责找旧案例、整理需求并准备初稿，资深设计师复核，客户确认后才送打样。资料分散，旧文件里有过期规格，也有只适用于某个客户的折中方案。团队没有记录过完整准备时间和复核返工时间。部分资深人员表示，解释旧方案的时间很多。</p>
+<p>企业收到两种建议：</p>
+<p><strong>建议甲：先改善候选准备。</strong> 限定同一类包装材料，只接入获准的现行规格。用较成熟的设计AI帮助查找参考、形成少量候选，专业人员仍按原职责复核。先比较候选准备时间、复核和可用方案，不承诺成交增长。甲希望尽早得到使用反馈，工程投入较少；资料适用条件和异常处理仍主要由专业人员掌握，需要看新增复核是否可承受。</p>
+<p><strong>建议乙：先组织完整共建。</strong> 同样选择这一类材料，处理从需求确认、方案准备、专业复核到打样申请的完整流程。整理现行规格和历史判断的适用条件；AI协助查找依据与缺失信息；资深人员判断工艺适配；客户确认后，由有权限的人申请打样并核对供应方接收结果。</p>
+<p>乙建议业务负责人和FDE共建，比较现有做法、资料整理与普通软件、增加AI三种安排。它更重视接续与积累，也需要更多前期工程、业务解释和维护时间，可能延迟第一轮可用结果。乙尚未给出收入提升预测，也未证明完整建设的额外投入一定值得。双方都同意先限定范围，不一次覆盖所有客户。</p>
+<p>已知企业能取得本类材料的现行规格；部分历史项目有打样记录，尚未整理判断与结果的对应关系。企业能安排业务负责人参与，但资深设计师的复核时间有限。客户通常希望尽快获得可用方案，并没有提出越多候选越好。</p>
+<h2 id="workbook--s2">请你判断</h2>
+<ol>
+<li>这家企业最值得保留和放大的，是什么能力？哪些材料尚不能直接作为通用规则？</li>
+<li>你会选择甲、乙，还是修订其中一种？给出理由，并指出乙也可能失败的条件。</li>
+<li>下一轮工作至少应取得什么证据，才有理由扩大？这些证据怎样区分AI的作用与资料整理、普通软件的作用？</li>
+<li>模型费和生成时间都下降，但复核队列变长，应该怎样解释？你希望FDE和企业内部各改变什么？</li>
+</ol>
+<p>先保留自己的回答，再阅读下面的分析。没有唯一措辞，但判断应能指回已给条件。</p>
+<details>
+<summary>展开参考分析</summary>
+
+<h2 id="workbook--s3">参考分析：先改变有效方案的生产</h2>
+<p>有价值的能力，是把品牌表达、材料与工艺联系起来形成客户能采用的包装方案。资深人员能识别屏幕设计与实际印刷之间的差异，是这种能力的一部分。旧文件只是线索：过期规格需要更新，客户特定妥协需要保留适用范围，历史设计被采用也不能独自证明它适合当前任务。</p>
+<p>两种建议都值得比较。甲更快取得使用反馈，如果现有复核能承接、关键事实清楚，可能是较小投入的起点；它需要防止把适用条件长期留在专家头脑中，也要限制候选数量，避免占满复核。乙更有利于检查完整交付和接续，但若先建很大的系统、长期占用稀缺骨干，可能在尚未证明需求时投入过多。</p>
+<p>可以修订为先用较小工程实现一类完整任务，把乙的完整视角与甲的早期反馈结合。若某项交接已有可用工具，就先复用；若最主要问题只是版本错误，先整理资料也可能足够。应选择能回答关键未知的投入，不必凭“AI更强”或“全链共建”这类词判断优劣。</p>
+<p>甲可能在复核负担增加时失败；乙可能在内部时间不足、建设范围过大或客户需求不成立时失败。现有事实还不足以确定二者完整成本和最终回报。</p>
+<p>比较应尽量使用同类任务、相同交付标准，并记录客户难度和材料完整程度。如果仅整理资料与普通软件就明显减少找资料和版本错误，那么这部分改善应归于那项改变。增加AI后，继续观察理解需求、提出候选和发现缺失条件等工作有无额外改善，也要记入核查与纠错。</p>
+<p>扩大之前，应看到完整任务实际完成，关键质量没有下降，复核负担可以承受，所需维护有人承担；若主张增加收入，还要看到客户采用与支付的证据。历史任务可以帮助早期比较，但真实使用中的打样和客户反馈仍不可省略。</p>
+<p>复核队列变长，可能是初稿更多，也可能是初稿更难检查或不合格比例更高。FDE应从任务记录找原因，比较信息组织、生成安排和复核支持怎样改变后端负担。企业要决定资深人员时间、候选数量和客户承诺如何配置。减少候选、加强前置确认，或分流确实需要专业复核的任务，都可能比继续增加生成量更合适。</p>
+</details>
+
+<h2 id="workbook--s4">第二轮：取得材料以后，下一笔投入投哪里</h2>
+<p>继续使用教学假设。团队对同组6份历史任务回放三种做法，输入相同，按原客户要求及已有打样记录评价。这里的时间和结果全部是假设记录，用于练习，不是实际AI运行。回放还不能说明新客户一定采用；样本很小，也不能推出稳定合格率。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>6份任务合计</th>
+<th align="right">现有人工</th>
+<th align="right">整理资料＋普通软件</th>
+<th align="right">增加AI候选准备</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>资料与初稿准备分钟</td>
+<td align="right">180</td>
+<td align="right">120</td>
+<td align="right">72</td>
+</tr>
+<tr>
+<td>专业复核与本次纠错分钟</td>
+<td align="right">120</td>
+<td align="right">102</td>
+<td align="right">150</td>
+</tr>
+<tr>
+<td>同一交付标准下合格份数</td>
+<td align="right">5</td>
+<td align="right">5</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>因规格缺项再次追问的任务数</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>另需资深人员维护与解释分钟</td>
+<td align="right">20</td>
+<td align="right">40</td>
+<td align="right">90</td>
+</tr>
+</tbody></table></div>
+<p>三种安排处理的是同组客户要求与同一批可取得的文件，但组织方式不同：原有人工自行在散件中找版本，通常准备一份初稿；普通软件使用已经核清现行版本的资料、固定字段和打样清单，也准备一份；AI在这套已整理资料和同一软件上增加需求提取与候选准备，本轮按三份候选运行。仍由同组人员按交错顺序回放，学习和顺序的影响没有完全排除。所以上表比较的是整套安排，不能直接算出AI单独造成的变化。</p>
+<p>例如其中一笔，客户要求“在金属膜上沿用既有标识，标识字形不能改”。供本题使用的现行供应条件要求先核对白墨方案并打样，旧文件则曾对另一客户采用加粗细字。它们不是同一条通用工艺规则。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>同一任务的中间结果（教学设定）</th>
+<th>复核者需要怎样继续</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>原有人工先沿旧文件准备加粗方案</td>
+<td>发现违反本客户要求，找回现行条件，撤掉加粗</td>
+</tr>
+<tr>
+<td>普通软件按现行清单标出“白墨与打样待确认”</td>
+<td>向供应方确认，保留原标识再继续</td>
+</tr>
+<tr>
+<td>AI给出加粗、改变版面、保留标识并补工艺确认三份候选</td>
+<td>逐份查依据，排除违反要求或未解决工艺问题的候选，保留待确认项</td>
+</tr>
+</tbody></table></div>
+<p>资料整理先减少了版本混用；多给候选同时增加了核查。当前可以判断哪种组合占用多少计划时间，却不能把全部差额归给AI。若要分辨新增模型的作用，可以在同一现行资料、同一软件和相同候选数下再比较，记录人员与顺序，检查具体减少或新增了什么劳动。</p>
+<p>下一周仍有同类6笔需求。准备人员可投入6小时，资深人员在复核、维护和解释上合计只能投入3小时，无法临时增加。三种方式沿用上表工时作计划估计，实际仍须记录；模型、软件和开发的新增费用尚未核齐，因此不能做完整利润排名。</p>
+<p>同时，历史材料里出现一条候选经验：“这类材料上细字容易出问题，应统一加粗。”三项记录如下：</p>
+<ul>
+<li>任务P1：金属膜上细白字识别不清，客户允许改字；加粗后的打样改善了识别。</li>
+<li>任务P2：同为金属膜，细字属于不可改动的品牌标识。直接加粗被客户拒绝；供应方调整白墨方案，客户确认后打样改善。</li>
+<li>任务P3：普通纸材上的相似细字没有同样问题，所用印刷条件也不同。</li>
+</ul>
+<p>请作两项决定：下一周扩大哪一种方式、修复什么，或暂不扩大？怎样修改候选经验，安排谁确认，并取得什么后续证据才允许常规采用？</p>
+<details>
+<summary>展开第二轮参考分析</summary>
+
+<p>只比较准备端，AI最省时间；加入资深人员约束，人工需要120＋20＝140分钟，普通软件需要102＋40＝142分钟，均能放进180分钟；AI需要150＋90＝240分钟，超出60分钟。准备人员三种安排都承接得住，因此当前约束落在专业支持。</p>
+<p>可先让整理与普通软件在限定范围运行，同时记录真实任务与客户结果；也可以保留人工方式，把新增工具费与改善作用核齐后再决定。当前证据不支持扩大AI的全部6笔使用。若仍想继续AI探索，可以缩小任务量或候选数量、先修复高复核负担的原因，但所需时间必须纳入180分钟，不能把维护当成无人承担的额外劳动。</p>
+<p>下一笔工程应先查明150分钟复核和90分钟维护分别花在哪里：候选是否太多，缺失依据是否增加检查，还是新工具需要一次性学习。回放中的维护工时在后续会下降，还是会随业务增加，目前未知，需要跟踪才能改变选择。</p>
+<p>候选经验不能保留“统一加粗”。P1支持在其条件下采用这种办法；P2表明品牌约束会改变可选动作；P3说明材料与印刷条件也影响判断。可以改为：出现细字可读性风险时，核对材料、印刷条件和品牌改动权限，再由设计师与供应方提出办法，按获准样稿打样确认；不能把加粗当作默认动作。</p>
+<p>资深设计师先确认这条方法的适用范围，保留三项原始依据和未核实条件。让未参与讨论的同事处理下一笔相近任务，观察是否提出必要追问、没有越权改标识，并取得打样与客户确认结果。若仍出现未解释的失败，继续修订范围。一次回放不能替代这轮真实使用。</p>
+</details>
+
+<h2 id="workbook--s5">变化一：客户不允许使用其他客户材料</h2>
+<p>现在增加一个条件：新客户要求其项目只使用已获授权的通用资料和本项目材料，不能混入其他客户的设计、记录和商业信息。你会怎样修改范围、资料来源与试点比较？</p>
+<details>
+<summary>展开参考分析</summary>
+
+<p>原有检索范围需要调整，不能用“AI只作内部参考”绕过客户条件。企业可以使用获准的通用工艺知识、现行材料规格和本项目材料；确需提炼跨客户方法时，先确认授权与保密安排，并保证不把其他客户的专有内容带入结果。</p>
+<p>适用输入减少后，原先方案的质量和工时假设都需要重测。若关键判断依赖无法取得的材料，企业应缩小服务范围、通过当前项目补充事实，或保留更多人工调查。来源限制本身不表示项目必然失败，但会改变建设成本和能够承诺的能力。</p>
+</details>
+
+<h2 id="workbook--s6">变化二：需求不多，能否试做一种新服务</h2>
+<p>再往后推进一轮。假设常规流程已经顺畅，旧订单和必要维护都已安排，资深人员接下来一周还可额外投入120分钟。企业想试做“打样前材料与工艺核查”，不包含完整重设计，也不承诺替印刷供应方确认设备参数。</p>
+<p>首次试验需要40分钟整理共同检查材料，每接一位客户还需要35分钟的专业核对与答疑。当前有三位客户：</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>客户</th>
+<th>已具备条件</th>
+<th>当前缺口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>提供现行规格、愿付一次试用费、有负责人接建议</td>
+<td>是否能按建议改变打样，尚未观察</td>
+</tr>
+<tr>
+<td>B</td>
+<td>是重要老客户，希望优先获得服务</td>
+<td>不愿提供具体印刷规格，也未指定接手人</td>
+</tr>
+<tr>
+<td>C</td>
+<td>提供现行规格，有印刷合作方参加确认，接受相同试用范围及费用</td>
+<td>需要观察实际采用与后续工作量</td>
+</tr>
+</tbody></table></div>
+<p>你会全部开始、选择部分客户，还是先不做？先算时间，再说明选择理由。若试用后A按建议调整了样稿，C却要求把完整重设计也包含在原费用里，下一步怎样处理？</p>
+<details>
+<summary>展开这一轮参考分析</summary>
+
+<p>全部三位需要40＋3×35＝145分钟，超过120分钟。选择两位需要110分钟，仍有10分钟余量。若目标是观察小服务能否进入实际打样，A和C具备输入和接手条件，更适合进入这一轮。B的重要性不能补出缺失的规格；可以先谈清资料与负责人要求，或另约取得资料的服务，不能按同样范围承诺完成核查。</p>
+<p>35分钟是这次计划估计，不能预先当作稳定成本。试用中应记下核查、补问、解释与返工各花多少时间。若两位都需要超出原范围的支持，110分钟的计划就要修订，而不应把新增劳动藏到资深人员加班里。</p>
+<p>A采用了一项建议，说明该项建议走到了实际动作；还要取得打样反馈，并看下一次是否仍有同类需要。C要求完整重设计，已经改变原有服务范围，应重新说明交付和费用，或保留原范围。不能把一次愿意试用算成以后都愿按同一价格购买完整服务。</p>
+<p>如果客户只需要一次核查，可以按次提供；只有在持续有新问题、资料和责任能够接续、支持费用可承受时，才有理由继续检验持续服务。这一轮取得的结果，决定下一轮做什么，不必提前把它包装成一个订阅产品。</p>
+</details>
+
+<h2 id="workbook--s7">最后一轮：让几项发展工作竞争同一份资源</h2>
+<p>沿用这家包装企业，进入一个新的两周安排。现有订单的交付时间已经保留，额外可用资源为：新增外付现金2,000元，业务负责人4小时，内部工程人员6小时，资深设计师120分钟。不同岗位的时间不能互换。</p>
+<p>四项工作都有人提出。以下费用和时间是教学预算；实际执行时需要记录是否超出。</p>
+<div class="table-wrap" role="region" aria-label="可横向滚动的数据表" tabindex="0"><table>
+<thead>
+<tr>
+<th>工作</th>
+<th align="right">新增外付</th>
+<th align="right">业务负责人</th>
+<th align="right">内部工程</th>
+<th align="right">资深设计师</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>M 必须维护：更新现行工艺资料与引用入口</td>
+<td align="right">800元</td>
+<td align="right">1小时</td>
+<td align="right">2小时</td>
+<td align="right">30分钟</td>
+</tr>
+<tr>
+<td>K 修订“统一加粗”的经验，并用新任务核验</td>
+<td align="right">300元</td>
+<td align="right">1小时</td>
+<td align="right">1小时</td>
+<td align="right">30分钟</td>
+</tr>
+<tr>
+<td>H 内部接手一次版本更新、检查与回退</td>
+<td align="right">400元</td>
+<td align="right">1小时</td>
+<td align="right">2小时</td>
+<td align="right">30分钟</td>
+</tr>
+<tr>
+<td>S 为A客户试做一次打样前核查</td>
+<td align="right">550元</td>
+<td align="right">2小时</td>
+<td align="right">1小时</td>
+<td align="right">75分钟</td>
+</tr>
+</tbody></table></div>
+<p>M影响当前交付，必须保留。K能否帮助新人正确提出条件，尚待核验；H所需记录与权限已经取得，但尚未独立试过；A已具备资料和接手人，愿意付一次试用费，也接受延后两周。S的75分钟包含首次共同材料40分钟与单客户35分钟，不再重复另加这两项。</p>
+<p>请写一份阶段提案：给出两个满足现金与每类人员上限的安排，推荐其中一个，说明暂缓什么，以及为什么。然后把M需要的资深时间从30分钟改成90分钟，重新计算并调整提案。不要只写“根据情况调整”，要指出具体挪走哪项工作。</p>
+<details>
+<summary>展开最终一轮参考分析</summary>
+
+<p>四项全做需要2,050元、业务5小时、工程6小时、设计165分钟。现金、业务和设计都超限；工程恰好满足，不能拿工程余量去抵设计工作。</p>
+<p>一个可行安排是M＋K＋H：1,500元，业务3小时，工程5小时，设计90分钟。它先稳定当前入口，修订错误经验，并验证内部接手；新服务延后。另一个是M＋S：1,350元，业务3小时，工程3小时，设计105分钟。它更早取得一次客户采用的证据，但K和H都尚未完成，不能把未做的积累与接手一并算进结果。</p>
+<p>在现有条件下，A接受延期，而错误经验与内部接续仍有实际缺口，可以先推荐M＋K＋H。若企业有必须本轮回应的服务承诺，也可以选择M＋S，但要承认推迟了什么，并限定试用范围。当前没有足以计算唯一最优收益的数据，选择应由事实、优先级与约束共同支持。</p>
+<p>M的设计时间变成90分钟后，M＋K＋H会用150分钟，超出30；M＋S会用165分钟，超出45。可以改为M＋K，或M＋H，两者都恰好用120分钟设计时间，再按错误经验与内部依赖哪个更急作选择。S本轮暂停。若先修订经验，交接推迟；若先验证交接，错误经验在修订前不能作为常规规则发布。</p>
+<p>把实际时间、取得的结果和留下的风险带回下一轮。付了钱、开过会或生成过材料，不能代替该项工作已经完成。</p>
+</details>
+
+<h2 id="workbook--s8">写自己的提案</h2>
+<p>选一项你熟悉的工作，用一页文字写清楚：谁需要什么改变；现有方法为何受限；什么企业经验值得放大；人、普通软件、AI与FDE各承担什么；怎样取得一轮完整结果；什么证据决定继续；运行与积累由谁维护。</p>
+<p>把下一阶段的现金和各岗位可用时间分别列出来，比较两个可行安排，再推荐其中一个。选一个最可能变化的条件，重新计算，明确届时推迟哪项工作、保留什么责任，以及什么证据会使你改选。</p>
+<p>然后请一位了解业务但没有参与写作的人读它。若对方仍需要猜你想服务谁、假设了什么或怎样算做好，先修订提案的事实和关系。不要用更多功能名补上这些缺口。</p>
+</article><footer><nav class="page-nav" aria-label="相邻阅读"><a href="../index.html#chapter-19">← 第19章｜形成企业自己的AI发展提案</a><a class="next" href="../index.html#concepts">概念回查｜从工作问题找到解释 →</a></nav><p class="quiet">本页与全课阅读由同一份正文生成。</p></footer></main></body></html>
