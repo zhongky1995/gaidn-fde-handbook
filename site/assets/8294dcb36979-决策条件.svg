@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 448" role="img" aria-labelledby="title desc">
+<title id="title">供应周期改变，原供给安排就需重做</title><desc id="desc">前五天完成样品与验证，第五天下单时距原上新日还剩三十七天。供给共用从零到六十天的刻度：原二十一加十四为三十五，余两天；新四十五加十四为五十九，超出二十二天。全部为教学设定。</desc>
+<defs><pattern id="overrun" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="6" height="6" fill="#f1e1d8"/><path d="M0 0V6" stroke="#9a5941" stroke-width="2"/></pattern></defs>
+<rect width="320" height="448" fill="#faf9f5"/>
+<g font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="17" fill="#273b31">
+<text x="18" y="32" font-size="20" font-weight="600">同一上新日，不同供给排期</text><text x="18" y="60">五天准备后，供给窗口37天</text>
+<path d="M20 95H300" stroke="#84948a"/><path d="M20 90V100M118 90V100M192.667 90V100M300 90V100" stroke="#84948a"/>
+<text x="20" y="120" text-anchor="middle">0</text><text x="118" y="120" text-anchor="middle">21</text><text x="192.667" y="120" text-anchor="middle">37</text><text x="300" y="120" text-anchor="end">60天</text>
+<path d="M192.667 134V368" stroke="#9a5941" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="20" y="157">原排期：35天</text>
+<rect x="20" y="176" width="98" height="38" fill="#35634e"/><rect x="118" y="176" width="65.333" height="38" fill="#c3d0bc"/>
+<text x="69" y="201" text-anchor="middle" fill="#fff">生产21</text><text x="150.666" y="201" text-anchor="middle">后续14</text>
+<path d="M183.333 222V230H192.667V222" fill="none" stroke="#35634e" stroke-width="2"/>
+<text x="20" y="252">窗口内，还剩2天余量</text>
+<text x="20" y="291">新排期：59天</text>
+<rect x="20" y="308" width="210" height="38" fill="#35634e"/><rect x="230" y="308" width="65.333" height="38" fill="#c3d0bc"/>
+<rect x="192.667" y="308" width="102.666" height="38" fill="url(#overrun)" opacity=".9"/>
+<text x="113" y="334" text-anchor="middle" fill="#fff">生产45天</text><text x="263" y="334" text-anchor="middle">后续14</text>
+<path d="M192.667 354V365H295.333V354" fill="none" stroke="#9a5941" stroke-width="2"/>
+<text x="20" y="393">超出22天，需要重新选择</text>
+<text x="20" y="426">教学设定；从第5天下单起算</text>
+</g></svg>
